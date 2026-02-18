@@ -1,4 +1,3 @@
-# AI Assistants in Code Development
 
 ![GitHub](https://img.shields.io/github/license/DataForScience/CodeAI)
 [![Twitter @data4sci](https://img.shields.io/twitter/follow/data4sci)](https://twitter.com/intent/follow?screen_name=data4sci)
@@ -9,9 +8,11 @@
 [![Data For Science](https://img.shields.io/badge/Graphs_For_Science-Subscribe-blue)](https://data4sci.substack.com/)
 [![Data Science Briefing](https://img.shields.io/badge/Sunday_Briefing-Subscribe-blue)](https://data4science.ck.page/a63d4cc8d9)
 
-### Complete course materials for the online series: https://data4sci.com/CodeAI by Data For Science
 
-**🎓 A comprehensive 5-week course on mastering Cursor, Windsurf, and Claude Code**
+# Code Development with AI Assistants
+### Complete course materials for the online series: https://www.oreilly.com/live-events/code-development-with-ai-assistants/0642572287405/ by Data For Science
+
+**🎓 A comprehensive 5-module course on mastering Cursor, Windsurf, and Claude Code**
 
 This course equips developers with the knowledge and practical skills necessary to harness the power of the software development tools Cursor, Windsurf, and Claude Code. In an increasingly competitive and fast-paced development environment, AI assistants are no longer a luxury but a necessity for optimizing workflows, accelerating software development, and improving overall efficiency. By demystifying the integration of AI into daily coding practices, you learn the strategies and techniques to transform development processes.
 
