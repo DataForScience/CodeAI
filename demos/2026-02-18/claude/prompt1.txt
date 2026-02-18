@@ -1,0 +1,7 @@
+Create a Python web scraper that:
+- Takes a URL as input
+- Uses requests and BeautifulSoup
+- Extracts all <h2> article titles
+- Returns a list of titles
+- Include type hints and docstrings
+- Add error handling for network issues

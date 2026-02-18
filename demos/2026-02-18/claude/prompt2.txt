@@ -1,0 +1,5 @@
+Analyze this project structure and tell me:
+1. What type of application is this?
+2. What frameworks are used?
+3. How is it organized?
+
