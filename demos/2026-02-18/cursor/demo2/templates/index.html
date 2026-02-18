@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Users API – Home{% endblock %}
+{% block content %}
+<h1>Users API</h1>
+<p>Browse users in the browser or use the REST API.</p>
+<h2>Web view</h2>
+<ul>
+    <li><a href="/users">View all users</a></li>
+</ul>
+<h2>API endpoints</h2>
+<ul>
+    <li><code>GET /api/users</code> – List users (with pagination)</li>
+    <li><code>GET /api/users/&lt;id&gt;</code> – Get single user</li>
+    <li><code>POST /api/users</code> – Create user</li>
+    <li><code>PUT /api/users/&lt;id&gt;</code> – Update user</li>
+    <li><code>DELETE /api/users/&lt;id&gt;</code> – Delete user</li>
+</ul>
+{% endblock %}

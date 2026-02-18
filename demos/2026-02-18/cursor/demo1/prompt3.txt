@@ -1,0 +1,6 @@
+Enhance with:
+1. Retry logic with exponential backoff
+2. Timeout handling (5 seconds)
+3. Custom User-Agent
+4. Logging for debugging
+5. Command-line interface

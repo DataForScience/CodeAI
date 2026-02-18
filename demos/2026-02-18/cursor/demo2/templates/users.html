@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}All users{% endblock %}
+{% block content %}
+<h1>Users</h1>
+{% if users %}
+    {% for user in users %}
+    <a href="/users/{{ user.id }}" class="card user-card">
+        <div class="user-avatar">{{ user.name[0]|upper if user.name else '?' }}</div>
+        <div class="user-info">
+            <div class="user-name">{{ user.name }}</div>
+            <div class="user-email">{{ user.email }}</div>
+            <div class="meta">ID: {{ user.id }} · Created {{ user.created_at.strftime('%b %d, %Y') }}</div>
+        </div>
+    </a>
+    {% endfor %}
+    {% if pagination and pagination.pages > 1 %}
+    <div class="pagination">
+        {% if pagination.page > 1 %}
+        <a href="/users?page={{ pagination.page - 1 }}">← Previous</a>
+        {% endif %}
+        <span class="current">Page {{ pagination.page }} of {{ pagination.pages }}</span>
+        {% if pagination.page < pagination.pages %}
+        <a href="/users?page={{ pagination.page + 1 }}">Next →</a>
+        {% endif %}
+    </div>
+    {% endif %}
+{% else %}
+    <p class="empty">No users yet. Create one via the API:</p>
+    <pre><code>curl -X POST http://127.0.0.1:5000/api/users \
+  -H "Content-Type: application/json" \
+  -d '{"email": "you@example.com", "name": "Your Name"}'</code></pre>
+{% endif %}
+{% endblock %}

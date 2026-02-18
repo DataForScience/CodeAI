@@ -1,0 +1,26 @@
+Create a Flask REST API with:
+
+Models:
+- User (id, email, name, created_at)
+- Use SQLAlchemy with SQLite
+
+Endpoints:
+- GET /api/users - list all users (with pagination)
+- GET /api/users/:id - get single user
+- POST /api/users - create user
+- PUT /api/users/:id - update user
+- DELETE /api/users/:id - delete user
+
+Features:
+- Input validation with marshmallow
+- Error handling (404, 400, 500)
+- JSON responses
+- CORS enabled
+- Use Flask-RESTful
+
+Files to create:
+- app.py (main application)
+- models.py (database models)
+- schemas.py (marshmallow schemas)
+- config.py (configuration)
+- requirements.txt

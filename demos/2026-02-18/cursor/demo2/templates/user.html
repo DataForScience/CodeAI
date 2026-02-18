@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ user.name }} – Users{% endblock %}
+{% block content %}
+<div class="nav">
+    <a href="/users">← Back to all users</a>
+</div>
+<div class="card user-card">
+    <div class="user-avatar" style="width: 72px; height: 72px; font-size: 2rem;">{{ user.name[0]|upper if user.name else '?' }}</div>
+    <div class="user-info" style="flex: 1;">
+        <h1 style="margin: 0 0 0.25rem;">{{ user.name }}</h1>
+        <div class="user-email" style="font-size: 1rem;">{{ user.email }}</div>
+        <div class="meta" style="margin-top: 0.5rem;">
+            ID: {{ user.id }} · Created {{ user.created_at.strftime('%B %d, %Y at %H:%M') }}
+        </div>
+    </div>
+</div>
+<h2>API</h2>
+<p><a href="/api/users/{{ user.id }}">View as JSON</a></p>
+{% endblock %}
