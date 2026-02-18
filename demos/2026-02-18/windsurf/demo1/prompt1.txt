@@ -1,0 +1,35 @@
+Create a data analysis dashboard with Flask:
+
+Requirements:
+- Upload CSV files (max 10MB)
+- Display data in table (first 100 rows)
+- Show statistics (count, mean, median, std, min, max)
+- Create interactive charts with Plotly:
+  - Histogram for numeric columns
+  - Bar chart for categorical columns
+  - Correlation heatmap
+- Filter data by column values
+- Download filtered results
+- Responsive design with Bootstrap 5
+
+Tech Stack:
+- Flask backend
+- Pandas for data processing
+- Plotly for interactive charts
+- Bootstrap 5 for UI
+- No database needed (in-memory)
+
+File Structure:
+- app.py (Flask application)
+- templates/index.html (upload page)
+- templates/dashboard.html (visualization page)
+- static/css/style.css (custom styling)
+- static/js/dashboard.js (interactions)
+- utils/data_processor.py (data handling)
+- requirements.txt
+
+Error Handling:
+- Invalid file types (only CSV)
+- Files too large
+- Empty files
+- Non-numeric data in numeric operations

@@ -1,0 +1,12 @@
+body {
+  background: #f8f9fa;
+}
+
+.plotly-chart {
+  width: 100%;
+  min-height: 360px;
+}
+
+table.table {
+  margin-bottom: 0;
+}
